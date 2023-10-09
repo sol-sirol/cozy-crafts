@@ -1,7 +1,19 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <AppHeader></AppHeader>
+
+  <main class="main">
+    <router-view />
+  </main>
+
+  <AppFooter></AppFooter>
 </template>
+
+<script>
+export default {
+  name: "App",
+  components: {
+    AppHeader: () => import("@/components/AppHeader"),
+    AppFooter: () => import("@/components/AppFooter"),
+  },
+};
+</script>
