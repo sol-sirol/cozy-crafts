@@ -4,14 +4,6 @@
 @import "libs";
 @import "global";
 
-// ПОДКЛЮЧЕНИЕ ШРИШТОВ =======================================================================================
-// &display=swap
-// &subset=cyrillic-ext
-
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Alef&family=Anaheim&display=swap&subset=cyrillic-ext");
-
-// ПОДКЛЮЧЕНИЕ ШРИШТОВ =======================================================================================
-
 // FOOTER К НИЗУ =====================================================
 body {
   display: flex;
@@ -130,58 +122,58 @@ footer {
 
 // MAIN =================================================================================================================================
 // MAIN =================================================================================================================================
-.opening-screen {
-  &__wrapper {
-    position: relative;
-    height: 100vh;
-    background-image: url(../images/header-img.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+// .opening-screen {
+//   &__wrapper {
+//     position: relative;
+//     height: 100vh;
+//     background-image: url(../images/header-img.jpg);
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//   }
 
-  &__container {
-    max-width: 1232px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
+//   &__container {
+//     max-width: 1232px;
+//     padding: 0 15px;
+//     margin: 0 auto;
+//   }
 
-  &__body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1202px;
-    @include adaptiv-value(width, 1202, 270, 1);
-    background: rgba(70, 54, 43, 0.6);
-    padding-bottom: 25px;
-  }
+//   &__body {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     width: 1202px;
+//     @include adaptiv-value(width, 1202, 270, 1);
+//     background: rgba(70, 54, 43, 0.6);
+//     padding-bottom: 25px;
+//   }
 
-  &__title {
-    color: #eeb960;
-    font-family: "Bhavuka";
-    @include adaptiv-value(font-size, 160, 50, 1);
-    @include adaptiv-value(line-height, 202, 50, 1);
-    letter-spacing: 0.05em;
-    text-align: center;
-    text-shadow: 1px 1px 1px #fff;
-    @media (max-width: 768px) {
-      span {
-        display: block;
-      }
-      padding-bottom: 60px;
-    }
-  }
+//   &__title {
+//     color: #eeb960;
+//     font-family: "Lobster";
+//     @include adaptiv-value(font-size, 160, 50, 1);
+//     @include adaptiv-value(line-height, 202, 50, 1);
+//     letter-spacing: 0.05em;
+//     text-align: center;
+//     text-shadow: 1px 1px 1px #fff;
+//     @media (max-width: 768px) {
+//       span {
+//         display: block;
+//       }
+//       padding-bottom: 60px;
+//     }
+//   }
 
-  &__sub-title {
-    color: #fff;
-    font-family: "Abel";
-    @include adaptiv-value(font-size, 40, 24, 1);
-    @include adaptiv-value(line-height, 51, 38, 1);
-    letter-spacing: 0.15em;
-    text-align: center;
-  }
-}
+//   &__sub-title {
+//     color: #fff;
+//     font-family: "Roboto Slab";
+//     @include adaptiv-value(font-size, 40, 24, 1);
+//     @include adaptiv-value(line-height, 51, 38, 1);
+//     letter-spacing: 0.15em;
+//     text-align: center;
+//   }
+// }
 
 .about {
   &__wrapper {
@@ -201,7 +193,7 @@ footer {
   &__title::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-51%);
     width: 100%;
@@ -230,14 +222,14 @@ footer {
 
   &__body {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 90px;
   }
 
   &__item {
-    max-width: 270px;
+    max-width: 300px;
     @include adaptiv-value(padding-bottom, 105, 50, 1);
   }
   &__item:nth-child(1) {
@@ -276,7 +268,8 @@ footer {
   }
 
   &__title {
-    font-family: "Abel";
+    font-family: "Roboto Slab";
+    font-weight: 400;
     @include adaptiv-value(font-size, 28, 22, 1);
     @include adaptiv-value(line-height, 36, 28, 1);
     letter-spacing: 0.1em;
@@ -285,6 +278,8 @@ footer {
   }
 
   &__text {
+    font-family: "Roboto Slab";
+    font-weight: 200;
   }
 }
 
@@ -308,7 +303,7 @@ footer {
     height: 2px;
     top: 50%;
     right: 50%;
-    transform: translate(-30%, 200%);
+    transform: translate(-50%, 200%);
     background-color: #eeb960;
   }
   &__title::after {
@@ -318,7 +313,7 @@ footer {
     height: 2px;
     top: 50%;
     left: 50%;
-    transform: translate(30%, 200%);
+    transform: translate(50%, 200%);
     background-color: #eeb960;
   }
 
@@ -347,7 +342,7 @@ footer {
     height: 2px;
     top: 50%;
     right: 50%;
-    transform: translate(-30%, 200%);
+    transform: translate(-50%, 200%);
     background-color: #eeb960;
   }
   &__title::after {
@@ -357,7 +352,7 @@ footer {
     height: 2px;
     top: 50%;
     left: 50%;
-    transform: translate(30%, 200%);
+    transform: translate(50%, 200%);
     background-color: #eeb960;
   }
 
@@ -387,7 +382,7 @@ footer {
   &__title {
     color: #f8e9d0;
     text-align: center;
-    font-family: "Bhavuka";
+    font-family: "Lobster";
     font-size: 35px;
     line-height: 44px;
     @include adaptiv-value(font-size, 35, 28, 1);
@@ -415,18 +410,33 @@ footer {
   }
 
   &__main {
+    margin-bottom: 45px;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
   }
 
-  &__images {
-    flex: 1 1 auto;
+  &__image-wrapper {
+    flex: 1 1 500px;
     min-width: 0;
     min-height: 0;
-    height: 580px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+  }
+  
+  &__image {
+    height: 580px;
+    object-position: center center;
+    object-fit: contain;
+    width: 100%;
+    // border-radius: 20px;
+    // overflow: hidden;
+  }
+
+  &__image-color-selection {
+    padding: 16px;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   &__description {
@@ -442,10 +452,15 @@ footer {
       justify-content: space-between;
       flex-direction: column;
     }
-    &__images {
-      flex: 0 0 auto;
-      height: 590px;
-      @include adaptiv-value(width, 1200, 250, 1);
+    &__image-wrapper {
+      width: 100%;
+      flex: 1 1 auto;
+    }
+    &__image {
+      height: 420px;
+    }
+    &__image-color-selection {
+      padding: 16px 0 0 0;
     }
     &__description {
       flex: 1 1 auto;
@@ -455,15 +470,15 @@ footer {
   }
 
   @media (max-width: 567px) {
-    &__images {
-      display: block;
+    &__image {
+      height: 250px;
     }
   }
 
   &__title {
     position: relative;
     color: #000;
-    font-family: "Bhavuka";
+    font-family: "Lobster";
     @include adaptiv-value(font-size, 38, 24, 1);
     @include adaptiv-value(line-height, 40, 30, 1);
     letter-spacing: 0.05em;
@@ -481,7 +496,8 @@ footer {
   }
 
   &__price {
-    font-family: "Anaheim";
+    // font-family: "Anaheim";
+    font-family: "Roboto Slab";
     font-size: 30px;
     line-height: 46px;
     @include adaptiv-value(font-size, 30, 22, 1);
@@ -500,13 +516,13 @@ footer {
     position: relative;
     display: inline-block;
     color: #000;
-    font-family: "Abel";
+    font-family: "Roboto Slab";
     font-size: 24px;
     line-height: 31px;
     @include adaptiv-value(font-size, 24, 18, 1);
     @include adaptiv-value(line-height, 31, 25, 1);
     letter-spacing: 0.05em;
-    font-weight: 700;
+    // font-weight: 700;
   }
 
   &__sub-title::after {
@@ -522,7 +538,7 @@ footer {
 
   &__description-text {
     color: rgba(70, 54, 43, 0.9);
-    font-family: "Alef";
+    font-family: "Roboto Slab";
     @include adaptiv-value(font-size, 22, 16, 1);
     @include adaptiv-value(line-height, 30, 24, 1);
     letter-spacing: 0.05em;
@@ -540,7 +556,7 @@ footer {
   &__description-warning {
     text-align: center;
     color: rgba(70, 54, 43, 0.9);
-    font-family: "Alef";
+    font-family: "Roboto Slab";
     @include adaptiv-value(font-size, 22, 16, 1);
     @include adaptiv-value(line-height, 26, 22, 1);
     letter-spacing: 0.05em;
@@ -553,7 +569,7 @@ footer {
     width: 100%;
     padding-top: 18px;
     padding-bottom: 14px;
-    font-family: "Abel";
+    font-family: "Roboto Slab";
     font-size: 30px;
     line-height: 46px;
     @include adaptiv-value(font-size, 30, 28, 1);
@@ -566,17 +582,53 @@ footer {
   }
 
   &__reviews {
-    padding: 45px 0;
+    margin: 45px 0;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
-    font-family: "Bhavuka";
+    font-family: "Lobster";
     font-size: 40px;
     line-height: 50px;
     @include adaptiv-value(font-size, 40, 30, 1);
     @include adaptiv-value(line-height, 50, 40, 1);
     letter-spacing: 0.05em;
+  }
+}
+.color-item {
+  border: 2px solid #eeb960;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+
+  &__image {
+    height: 100px;
+    width: 100px;
+
+    object-fit: contain;
+  }
+
+  &.active {
+    outline: 3px solid #eeb960;
+  }
+
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    transform: translateY(3px);
+  }
+  &:active {
+    transform: translateY(4px);
+    opacity: 0.7;
+  }
+}
+@media (max-width: 567px) {
+  .color-item {
+    &__image {
+      height: 60px;
+      width: 60px;
+    }
   }
 }
 .reviews-panel {
@@ -613,7 +665,7 @@ footer {
   }
 
   &__text {
-    font-family: "Alef";
+    font-family: "Roboto Slab";
     font-size: 22px;
     line-height: 26px;
     letter-spacing: 0.01em;
@@ -715,7 +767,7 @@ footer {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -10px;
     transform: translateX(-51%);
     width: 100%;
     max-width: 570px;
@@ -879,7 +931,7 @@ footer {
   }
 
   &__counter {
-    font-family: "Bhavuka";
+    font-family: "Lobster";
     position: absolute;
     display: block;
     color: #fff;
@@ -1017,6 +1069,10 @@ footer {
 .product-panel__description-button:hover {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   transform: translateY(3px);
+}
+.product-panel__description-button:active {
+    transform: translateY(4px);
+    background-color: lighten(#eeb960, 6.25%);
 }
 
 @media (max-width: 560px) {

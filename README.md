@@ -62,6 +62,8 @@ yarn lint
 - eslint
 - unit-jest
 - e2e-cypress
+- axios
+- swiper
 
 <!--
 Ecosystem

@@ -8,12 +8,15 @@
   <AppFooter></AppFooter>
 </template>
 
-<script>
+<script lang="ts">
+import AppFooter from "./components/AppFooter.vue";
+import AppHeader from "./components/AppHeader.vue";
+
 export default {
   name: "App",
   components: {
-    AppHeader: () => import("@/components/AppHeader"),
-    AppFooter: () => import("@/components/AppFooter"),
+    AppHeader,
+    AppFooter,
   },
 };
 </script>
